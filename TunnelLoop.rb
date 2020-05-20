@@ -9,7 +9,7 @@
 
 def least_factorial(n)
 
-	factorial = 1
+	factorial = 0
 	result    = 1
 
 	while result < n do result *= (factorial += 1) end
