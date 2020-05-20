@@ -17,3 +17,18 @@ def least_factorial(n)
 	return result
 
 end
+
+def countSumOfTwoRepresentations2(n, l, r)
+
+	count = 0
+
+	for number in l..r 
+
+		if number <= (n - number) && (n - number) <= r then count += 1 end
+
+	end
+
+	return count
+
+
+end
