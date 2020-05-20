@@ -12,12 +12,7 @@ def least_factorial(n)
 	factorial = 1
 	result    = 1
 
-	while result < n
-
-		factorial += 1
-		result *= factorial
-
-	end
+	while result < n do result *= (factorial += 1) end
 
 	return result
 
