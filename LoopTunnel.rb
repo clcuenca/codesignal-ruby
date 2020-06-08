@@ -18,6 +18,14 @@ def least_factorial(n)
 
 end
 
+# -------------------------------------------------------------------
+# Finds the smallest factorial result relative to the given integer n
+#
+# Problem #26
+#
+# Author: Carlos L. Cuenca
+# Date: 05/19/2020
+
 def countSumOfTwoRepresentations2(n, l, r)
 
 	count = 0
@@ -32,3 +40,24 @@ def countSumOfTwoRepresentations2(n, l, r)
 
 
 end
+
+def magicalWell(a, b, n) 
+
+
+    salary = 0
+
+    while n > 0 do 
+    
+        salary += a*b
+
+        a += 1
+        b += 1
+
+        n -= 1
+    
+    end
+
+    return salary
+
+end
+
