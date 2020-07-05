@@ -41,6 +41,15 @@ def countSumOfTwoRepresentations2(n, l, r)
 
 end
 
+# --------------------------------------------------------
+# Calculates the amount of money given by the magical well
+# when casting a marble
+#
+# Problem #27
+#
+# Author: Carlos L. Cuenca
+# Date: 07/5/2020
+
 def magicalWell(a, b, n) 
 
 
