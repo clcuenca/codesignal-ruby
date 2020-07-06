@@ -25,3 +25,19 @@ def largestNumber(n)
     return 10**n - 1
 
 end
+
+# -----------------------------------------------------------------------
+# Returns the amount of candies each individual child will be able to eat
+# from a pot containing m candies
+#
+# Problem #3
+# 
+# @author Carlos L. Cuenca
+# @date: 07/06/2020
+
+def candies(n, m)
+
+    return n * (m / n)
+
+end
+
