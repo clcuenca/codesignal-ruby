@@ -8,7 +8,9 @@
 
 
 def addTwoDigits(n)
+
 	return (n / 10) + (n % 10)
+	
 end
 
 
@@ -41,3 +43,16 @@ def candies(n, m)
 
 end
 
+# ----------------------------------------------------------------------------
+# Returns the amount of seats that will be blocked if the person were to leave
+#
+# Problem #4
+#
+# @author: Carlos L. Cuenca
+# @date: 07/06/2020
+
+def seatsInTheater(nCols, nRows, col, row)
+
+    return (nCols - col + 1)*(nRows - row)
+
+end
