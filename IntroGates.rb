@@ -90,3 +90,17 @@ def circleOfNumbers(n, firstNumber)
 
 end
 
+# ------------------------------------------------------------------------
+# Returns the sum of each of the digits after n minutes have elapsed since
+# 00:00.
+#
+# Problem #7
+#
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def lateRide(n)
+
+    return (n/60/10) + (n/60%10) + (n%60/10) + (n%60%10)
+
+end
