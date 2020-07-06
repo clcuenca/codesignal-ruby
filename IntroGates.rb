@@ -10,7 +10,7 @@
 def addTwoDigits(n)
 
 	return (n / 10) + (n % 10)
-	
+
 end
 
 
@@ -56,3 +56,37 @@ def seatsInTheater(nCols, nRows, col, row)
     return (nCols - col + 1)*(nRows - row)
 
 end
+
+# -----------------------------------------------------------------------
+# Returns the largest number that's divisible by the given divisor & less
+# than or equal to the given bound
+#
+# Problem #5
+# 
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def maxMultiple(divisor, bound)
+
+	return bound - (bound % divisor)
+
+end
+
+# -----------------------------------------------------------------------------
+# Returns the radially opposite number from the given amount of numbers
+# and the given first number. Since the numbers are in a circle, 'overflowing'
+# numbers need to be taken into account (e.g. 7 + 5 with a given n = 10 
+# should equate to 2, not 12) therefore, the remainder is taken; this also
+# covers the case when the radially opposite number is less that a given n = 10
+#
+# Problem #6
+#
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def circleOfNumbers(n, firstNumber)
+
+	return (firstNumber + n / 2) % n
+
+end
+
