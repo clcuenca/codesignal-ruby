@@ -6,13 +6,11 @@
 # @author: Carlos L. Cuenca
 # @date 07/06/2020
 
-
 def addTwoDigits(n)
 
 	return (n / 10) + (n % 10)
 
 end
-
 
 # ----------------------------------------
 # Returns the largest number with n digits
@@ -102,5 +100,24 @@ end
 def lateRide(n)
 
     return (n/60/10) + (n/60%10) + (n%60/10) + (n%60%10)
+
+end
+
+# --------------------------------------------------------------------------
+# Returns the amount of minutes given s cents and min1, min2_10, min11 rates
+# for the first minute, second to tenth, & eleventh or above minutes
+#
+# Problem #8
+# 
+# @author: Carlos L. Cuenca
+# @since: 07/06/2020
+
+def phoneCall(min1, min2_10, min11, s)
+
+    if not s or s - min1 < 0 then return 0 end 
+    
+    if(s < 9*min2_10 + 1) then return 1 + (s - min1) / min2_10 end
+    
+    return (s - min1 - 9*min2_10) / min11 + 10
 
 end
