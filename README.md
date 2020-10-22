@@ -6,7 +6,7 @@ Collection of various Codesignal problems written in Ruby
 
 ## Solved Categories
 
-* **Algorithms/warmup**
+* **The Core/Intro Gates**
 
 ## Program Execution
 
